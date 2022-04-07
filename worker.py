@@ -23,7 +23,11 @@ if __name__ == "__main__":
     hero_progress = {}
     logging.info("Starting hero progress track...")
     while True:
-        current_hero_progress = dfk_hero.get_hero_recover_list(configuration)
+        try:
+            current_hero_progress = dfk_hero.get_hero_recover_list(configuration)
+        except Exception as ex:
+            logging.error("There was problem fetching data from bc...")
+            current_hero_progress = {}
 
         recovered_heros = []
         for hero_id, progress_status in current_hero_progress.items():
