@@ -2,10 +2,10 @@
     "sleep_time": 300,
     "user_address": "0x...",
     "email": {
-        "server": "smtp.gmail.com",
+        "server": "smtp-mail.outlook.com",
         "port": "587",
         "sender_email": "",
         "sender_password": "",
-        "receiver_emails": []
+        "receiver_emails": [""]
     }
 }

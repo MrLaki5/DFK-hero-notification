@@ -12,6 +12,8 @@ RUN pip3 install --upgrade pip && \
     pip3 install web3
 
 COPY dfk_hero.py dfk_hero.py
+COPY email_client.py email_client.py
+COPY worker.py worker.py
+COPY config.json config.json
 
-# WORKDIR /build
-# CMD ["/bin/bash", "-c", "make"]
+CMD ["python3", "./worker.py", "--config", "./config.json"]
