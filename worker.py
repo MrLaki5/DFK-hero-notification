@@ -23,7 +23,6 @@ if __name__ == "__main__":
     hero_progress = {}
     logging.info("Starting hero progress track...")
     while True:
-        time.sleep(configuration["sleep_time"])
         current_hero_progress = dfk_hero.get_hero_recover_list(configuration)
 
         recovered_heros = []
@@ -38,3 +37,5 @@ if __name__ == "__main__":
             mail_message = "Recovered hero ids: " + " ".join(recovered_heros)
             logging.info("Sending email > " + mail_message)
             email_client.send_email(configuration, "DFK hero progress update", mail_message)
+
+        time.sleep(configuration["sleep_time"])

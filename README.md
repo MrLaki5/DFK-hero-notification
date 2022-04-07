@@ -1,5 +1,5 @@
 # Build image
 docker build -t dfk-email:latest -f Dockerfile .
 
-# Cross-compile project
+# Start project
 docker run -it dfk-email:latest
