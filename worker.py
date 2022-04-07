@@ -26,7 +26,7 @@ if __name__ == "__main__":
         current_hero_progress = dfk_hero.get_hero_recover_list(configuration)
 
         recovered_heros = []
-        for hero_id, progress_status in current_hero_progress:
+        for hero_id, progress_status in current_hero_progress.items():
             if hero_id in hero_progress:
                 if (not hero_progress[hero_id]) and (progress_status):
                     recovered_heros.append(hero_id)

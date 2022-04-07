@@ -205,5 +205,4 @@ def get_hero_recover_list(configuration):
         hero_recover_date = datetime.fromtimestamp(hero_details["state"]["staminaFullAt"], timezone.utc)
         hero_restored = hero_recover_date < current_date
         recovered_hero_status[hero] = hero_restored
-    print(recovered_hero_status)
     return recovered_hero_status
