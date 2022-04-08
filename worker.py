@@ -38,7 +38,7 @@ if __name__ == "__main__":
             hero_progress[hero_id] = progress_status
 
         if len(recovered_heros) > 0:
-            mail_message = "Recovered hero ids: " + " ".join(recovered_heros)
+            mail_message = "Recovered hero ids: " + " ".join(str(x) for x in recovered_heros)
             logging.info("Sending email > " + mail_message)
             email_client.send_email(configuration, "DFK hero progress update", mail_message)
 
