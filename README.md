@@ -1,4 +1,5 @@
 ## Defi Kingdoms hero notifications
+<img src="img/logo.png" width="200"/>
 Get an email when your Defi Kingdoms hero stamina is full, making your hero 100% ready to quest. Don't lose time, having your hero not questing when it should, while you are unaware of the situation. This package will provide you with email notifications for all your heroes!
 
 This package uses ONLY the public 0x address of your wallet.
