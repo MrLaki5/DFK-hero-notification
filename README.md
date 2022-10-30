@@ -1,3 +1,6 @@
+## Note
+This repo was using Serendale contracts for tracking hero status. Because Defi Kingdoms has moved away from Serendale, this repo is outdated.
+
 <p align="center">
   <img src="img/logo.png" width="250"/>
 </p>
